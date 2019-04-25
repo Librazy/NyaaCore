@@ -11,8 +11,8 @@ configurations.all {
 // Version strings used for CI
 // Note the spaces before and after the equals sign
 ext.majorVersion = 6
-ext.minorVersion = 3
-ext.minecraftVersion = "1.13.2"
+ext.minorVersion = 4
+ext.minecraftVersion = "1.14"
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -55,8 +55,8 @@ dependencies {
     // spigot dependencies
     compileOnly "org.spigotmc:spigot-api:$minecraftVersion-R0.1-SNAPSHOT"
     compileOnly 'io.netty:netty-all:4.1.25.Final' // netty is shadowed inside spigot jar
-    compileOnly files('lib/spigot-1.13.2.jar')    // for NMS
-    // compileOnly files('lib/patched_1.13.2.jar')    // for Paper NMS
+    compileOnly files('lib/spigot-1.14.jar')    // for NMS
+    // compileOnly files('lib/patched_1.14.jar')    // for Paper NMS
 
     // other plugins
     compileOnly('net.milkbowl.vault:VaultAPI:1.7') { transitive = false }
@@ -80,7 +80,7 @@ dependencies {
 
     // Testing
     testImplementation 'junit:junit:4.12'
-    testImplementation files('lib/spigot-1.13.2.jar')
+    testImplementation files('lib/spigot-1.14.jar')
     testImplementation 'org.mockito:mockito-core:2.18.3'
     testImplementation 'org.xerial:sqlite-jdbc:3.21.0.1'
     testImplementation 'ch.vorburger.mariaDB4j:mariaDB4j:2.2.3'

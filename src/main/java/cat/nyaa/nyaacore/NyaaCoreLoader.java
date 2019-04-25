@@ -9,7 +9,7 @@ import cat.nyaa.nyaacore.utils.ClickSelectionUtils;
 import cat.nyaa.nyaacore.utils.OfflinePlayerUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.serialization.ConfigurationSerialization;
-import org.bukkit.craftbukkit.v1_13_R2.util.CraftMagicNumbers;
+import org.bukkit.craftbukkit.v1_14_R1.util.CraftMagicNumbers;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class NyaaCoreLoader extends JavaPlugin {
@@ -20,7 +20,7 @@ public class NyaaCoreLoader extends JavaPlugin {
         return instance;
     }
 
-    public static final String TARGET_MAPPING = "7dd4b3ec31629620c41553e5c142e454";
+    public static final String TARGET_MAPPING = "8b7fe9012a93b36df04844a6c990de27";
 
     static {
         ConfigurationSerialization.registerClass(NbtItemStack.class);
